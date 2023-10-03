@@ -1,0 +1,19 @@
+
+touch .gitignore
+git config --global user.name Lokesh
+git config --global user.email "lokeshburade494@gmail.com"
+git init
+git add .
+git commit -m "Initial Commit"
+git status  #Just to see
+$ ssh-keygen -t rsa -b 4096 -C "lokeshburade494@gmail.com"
+tail <path to id_rsa.pub> #Add this key to your Github Account 
+git remote add origin <ssh url.git>
+git push origin master
+git checkout --orphan BRANCH-NAME
+git push -u origin BRANCH-NAME
+git branch -D   #Delete
+git branch   #total Branch
+git fetch    #Load file from Git repo
+git rebase origin/dev   # merge Fetch file with working branch
+rm .git/index.lock    # Remove git lock 
